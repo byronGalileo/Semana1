@@ -1,0 +1,157 @@
+body {
+    background-color: powderblue;
+}
+
+.First{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Second{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+    cursor: pointer;
+    padding: 1em;
+    background: #348dde;
+    position: relative;
+    color: white;
+    border-radius: 5px;
+}
+
+th {
+    border: 1px solid;
+  }
+  td {
+    border: 1px solid;
+}
+
+#Datos{
+    width: 45%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+#Hobbies{
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#Libros{
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#sitios{
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#Descripcion{
+    width: 45%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.just{
+    display: flex;
+    align-items: center; 
+}
+
+.secondJust{
+   margin: 5%; 
+}
+
+#Datos img{
+    width: 150px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+#contenedorImagen {
+    position: relative;
+    perspective: 1000px; /* Establece la perspectiva para el efecto de volteo */
+}
+
+
+#logoEquipo {
+    transform: rotateY(180deg); /* Inicialmente oculta el logo volteándolo 180 grados */
+    cursor: pointer;
+    z-index: 1; /* El logo está detrás inicialmente */
+}
+
+#imagenPerfil {
+    z-index: 2; /* La imagen de perfil está enfrente inicialmente */
+}
+
+#contenedorImagen:hover #imagenPerfil {
+    transform: rotateY(180deg); /* Voltea la imagen cuando el cursor está sobre el contenedor */
+}
+
+#contenedorImagen:hover #logoEquipo {
+    transform: rotateY(0deg); /* Muestra el logo cuando el cursor está sobre el contenedor */
+}
+
+#Datos .Datos_Texto{
+    margin-left: 20px;
+}
+
+#Descripcion h2{
+    margin: 20px;
+}
+
+/* Estilos generales */
+.flip-container {
+    perspective: 1000px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+.flipper {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(0deg); /* Añadido para que la cara frontal sea visible inicialmente */
+}
+
+/* Cara frontal */
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Cara frontal (imagen inicial) */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg); /* Añadido para que la cara frontal sea visible inicialmente */
+}
+
+/* Cara trasera (imagen que aparecerá) */
+.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+/* Efecto de volteo al pasar el ratón */
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+

@@ -3,12 +3,110 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tarea #1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="styles.css">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Primera Impresion</h1>
+    <div class="First">
+        <div id="Datos">
+            <div class="just"> 
+              
+              <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <!-- Contenido de la cara frontal (imagen inicial) -->
+                        <img src="assets/profileAs.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="back">
+                        <!-- Contenido de la cara trasera (imagen que aparecerá) -->
+                        <img src="assets/barcelonaLogo.png" alt="Imagen 2">
+                    </div>
+                </div>
+            </div>
+            
+                
+                <div class="Datos_Texto">
+                    <h2>BYRON HALDAIR GARCIA GUZMAN</h2>
+                    <h3><b>Edad: </b> 21</h3>
+                    <h3><b>Sexo: </b> Porfa</h3>
+                    <h3><b>Altura: </b> 168cm</h3>
+                </div>
+            </div>  
+        </div>
+    
+        <div id="Descripcion">
+            <div class="just">
+                <h2>Ingenieria En Sistemas</h2>
+                <p>La Ingeniería en Sistemas fusiona ingeniería y tecnología para formar profesionales capaces de desarrollar,<br> 
+                gestionar y asegurar sistemas informáticos. Cubre áreas como programación, redes y seguridad. Las salidas <br> 
+                laborales incluyen roles en desarrollo de software y administración de redes. Las tendencias actuales <br> 
+                abarcan inteligencia artificial, Internet de las Cosas y computación en la nube.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="Second">
+        <div id="Hobbies">
+          <div class="secondJust">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Leer</li>
+                <li>Escuchar Música</li>
+                <li>Jugar League of Legends</li>
+                <li>Jugar Basquet</li>
+                <li>Leer</li>
+            </ul>
+          </div>
+        </div>
+        <div id="Libros">
+          <div class="secondJust">
+            <h2>Libros</h2>
+            <ul>
+                <li>La calle donde tu vives</li>
+                <li>Los Nazarenos</li>
+                <li>La Republica</li>
+                <li>Don Quijote de La Mancha</li>
+                <li>20 mil leguas de viaje submarino</li>
+            </ul>
+          </div>
+        </div>
+        <div id="sitios" >
+          <div class="secondJust">
+            <h2>Sitios web recomendados</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>URL del Sitio</th>
+                    <th>Nombre</th>
+                    <th>Puntaje</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="https://text-compare.com/">https://text-compare.com/</a></td>
+                    <td>Comparador de Texto</td>
+                    <td>
+                      <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.unserialize.me/">https://www.unserialize.me/</a></td>
+                    <td>Deserializador</td>
+                    <td>
+                      <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Agrega más filas según sea necesario -->
+                </tbody>
+              </table>
+          </div>           
+        </div>
+    </div>
 </body>
 </html>
